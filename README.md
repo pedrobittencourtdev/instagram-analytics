@@ -36,8 +36,7 @@ Isso indica que conteúdos voltados ao entretenimento e estilo de vida possuem a
 ## 🚀 Como Executar
 1. Clone este repositório:
    ```bash
-   git clone [https://github.com/seu-usuario/seu-repositorio.git](https://github.com/seu-usuario/seu-repositorio.git)
-
+   git clone https://github.com/pedrobittencourtdev/instagram-analytics.git
 2. Certifique-se de ter o Python e as bibliotecas necessárias instaladas:
     ```bash
     pip install pandas numpy matplotlib seaborn
