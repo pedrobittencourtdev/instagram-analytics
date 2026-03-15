@@ -10,7 +10,8 @@ Com esses dados, a agência poderá fazer recomendações baseadas em evidência
 ## 🎯 Objetivos
 * Extrair e carregar dados de redes sociais (dataset do Kaggle).
 * Limpar e processar os dados utilizando Python.
-* Analisar o engajamento médio por categoria de conteúdo.
+* Analisar o engajamento médio e salvamentos (saves) por categoria de conteúdo.
+* Identificar os melhores dias para postagem cruzando categorias de alto desempenho.
 * Visualizar os resultados para facilitar a tomada de decisão da equipe de marketing.
 
 ## 🛠️ Ferramentas Utilizadas
@@ -25,13 +26,38 @@ Com esses dados, a agência poderá fazer recomendações baseadas em evidência
 * `Instagram_Analytics.csv`: Base de dados utilizada no projeto (via Kaggle).
 * `README.md`: Documentação do projeto.
 
-## 📈 Resultados Iniciais
-Até o momento, a análise revelou que as 3 categorias com maior taxa de engajamento médio são:
-1.  **Music** (4,28%)
-2.  **Fitness** (4,27%)
-3.  **Fashion** (4,26%)
+## 📈 Resultados da Análise
 
-Isso indica que conteúdos voltados ao entretenimento e estilo de vida possuem a maior retenção de público no conjunto de dados analisado.
+Durante a análise exploratória, investigamos métricas principais para direcionar a estratégia de conteúdo da agência:
+
+### 1. Taxa de Engajamento Imediato (Likes e Comentários)
+![Gráfico de Engajamento](grafico_engajamento.png)
+
+A análise revela que categorias ligadas a entretenimento e estilo de vida dominam a interação imediata do público. O top 3 é composto por:
+1. **Music** (4,28%)
+2. **Fitness** (4,27%)
+3. **Fashion** (4,26%)
+
+### 2. Retenção e Utilidade (Média de Saves)
+![Gráfico de Saves](grafico_saves.png)
+
+Quando analisamos os "Saves" (indicador de que o usuário achou o conteúdo útil para guardar e rever), o cenário reafirma a força de certos nichos:
+1. **Fashion**
+2. **Comedy**
+3. **Music**
+
+### 3. Melhor Momento para Postagem (Timing)
+![Melhores Dias para Postar](melhores_dias_postagem.png)
+
+Aprofundando a análise nas duas categorias de maior destaque (Fashion e Music), identificamos padrões de comportamento distintos durante a semana:
+* **Fashion:** O pico de engajamento ocorre nas **Terças-feiras**. O meio da semana (Quarta-feira) apresenta a maior queda de interesse.
+* **Music:** O engajamento atinge o seu pico máximo aos **Sábados**, alinhando-se perfeitamente com os hábitos de lazer e entretenimento de final de semana.
+
+## 💡 Recomendação Estratégica Final
+Para maximizar o ROI dos clientes da agência, recomendamos o seguinte calendário de ativação:
+1. **Campanhas de Moda (Fashion):** Concentrar o maior volume de orçamento e postagens de alto impacto nas **Terças-feiras**.
+2. **Campanhas de Música e Entretenimento:** Reservar os principais lançamentos e ações de marketing para os **Sábados**.
+
 
 ## 🚀 Como Executar
 1. Clone este repositório:
