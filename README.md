@@ -1,6 +1,6 @@
 # 📊 Instagram Analytics — Análise de Desempenho para Agências de Marketing
 
-![Python](https://img.shields.io/badge/Python-3.x-blue)
+![Python](https://img.shields.io/badge/Python-blue)
 ![Pandas](https://img.shields.io/badge/Pandas-2.x-green)
 ![Status](https://img.shields.io/badge/Status-Concluído-brightgreen)
 
