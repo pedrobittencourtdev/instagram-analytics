@@ -52,7 +52,7 @@ instagram-analytics/
 
 ## 🛠️ Tecnologias Utilizadas
 
-- Python 3.x
+- Python
 - Pandas
 - NumPy
 - Matplotlib
