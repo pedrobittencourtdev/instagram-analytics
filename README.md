@@ -1,70 +1,99 @@
-# 📊 Análise de Desempenho em Mídias Sociais - Instagram 🤳
+# 📊 Instagram Analytics — Análise de Desempenho para Agências de Marketing
 
-Este projeto foi desenvolvido como parte do curso de Ciência de Dados do **Coursera**, simulando o papel de um Analista de Mídias Sociais em uma agência de marketing especializada.
+![Python](https://img.shields.io/badge/Python-3.x-blue)
+![Pandas](https://img.shields.io/badge/Pandas-2.x-green)
+![Status](https://img.shields.io/badge/Status-Concluído-brightgreen)
 
-## 📝 Cenário do Projeto
-Uma agência de marketing precisa otimizar a estratégia de seus clientes no Instagram. O objetivo é analisar o desempenho de diferentes categorias de postagens (Saúde, Tecnologia, Comédia, etc.) para identificar quais geram maior alcance e engajamento. 
+## 📌 Sobre o Projeto
 
-Com esses dados, a agência poderá fazer recomendações baseadas em evidências para melhorar os resultados dos clientes dentro do orçamento e prazos estabelecidos.
+Análise exploratória de dados de **29.999 posts do Instagram**, com o objetivo de 
+identificar os melhores nichos, formatos e horários para maximizar o engajamento 
+de clientes de uma agência de marketing digital.
+
+> Dados retirados da plataforma [Kaggle](https://www.kaggle.com).
+
+---
 
 ## 🎯 Objetivos
-* Extrair e carregar dados de redes sociais (dataset do Kaggle).
-* Limpar e processar os dados utilizando Python.
-* Analisar o engajamento médio e salvamentos (saves) por categoria de conteúdo.
-* Identificar os melhores dias para postagem cruzando categorias de alto desempenho.
-* Visualizar os resultados para facilitar a tomada de decisão da equipe de marketing.
 
-## 🛠️ Ferramentas Utilizadas
-* **Python**
-* **Pandas**: Manipulação e limpeza de dados.
-* **Numpy**: Suporte matemático.
-* **Matplotlib & Seaborn**: Visualização de dados e criação de gráficos.
-* **Git & GitHub**: Versionamento de código.
+- Identificar quais categorias de conteúdo geram mais engajamento
+- Descobrir os melhores dias e horários para postar
+- Avaliar o impacto do formato de mídia (Reel, Image, Carousel)
 
-## 📂 Estrutura do Repositório
-* `SocialMediaDataAnalysis.ipynb`: Jupyter Notebook contendo todo o código da análise.
-* `Instagram_Analytics.csv`: Base de dados utilizada no projeto (via Kaggle).
-* `README.md`: Documentação do projeto.
+---
 
-## 📈 Resultados da Análise
+## 🔍 Principais Insights
 
-Durante a análise exploratória, investigamos métricas principais para direcionar a estratégia de conteúdo da agência:
+| Análise | Resultado |
+|--------|-----------|
+| 🏆 Top categorias | Music, Fitness e Fashion |
+| 📅 Melhor dia (Fashion) | Terça-feira |
+| 📅 Melhor dia (Music) | Sábado |
+| ⏰ Melhores horários | 02h, 03h e 08h |
+| 🎬 Melhor formato | Equivalentes (diferença < 0.5%) |
 
-### 1. Taxa de Engajamento Imediato (Likes e Comentários)
-![Gráfico de Engajamento](grafico_engajamento.png)
+---
 
-A análise revela que categorias ligadas a entretenimento e estilo de vida dominam a interação imediata do público. O top 3 é composto por:
-1. **Music** (4,28%)
-2. **Fitness** (4,27%)
-3. **Fashion** (4,26%)
+## 📁 Estrutura do Projeto
+```
+instagram-analytics/
+│
+├── SocialMediaDataAnalysis.ipynb   # Notebook principal
+├── Instagram_Analytics.csv         # Dataset
+├── grafico_engajamento.png
+├── grafico_saves.png
+├── melhores_dias_postagem.png
+├── heatmap_hora_dia.png
+├── grafico_media_type.png
+└── README.md
+```
 
-### 2. Retenção e Utilidade (Média de Saves)
-![Gráfico de Saves](grafico_saves.png)
+---
 
-Quando analisamos os "Saves" (indicador de que o usuário achou o conteúdo útil para guardar e rever), o cenário reafirma a força de certos nichos:
-1. **Fashion**
-2. **Comedy**
-3. **Music**
+## 🛠️ Tecnologias Utilizadas
 
-### 3. Melhor Momento para Postagem (Timing)
-![Melhores Dias para Postar](melhores_dias_postagem.png)
+- Python 3.x
+- Pandas
+- NumPy
+- Matplotlib
+- Seaborn
 
-Aprofundando a análise nas duas categorias de maior destaque (Fashion e Music), identificamos padrões de comportamento distintos durante a semana:
-* **Fashion:** O pico de engajamento ocorre nas **Terças-feiras**. O meio da semana (Quarta-feira) apresenta a maior queda de interesse.
-* **Music:** O engajamento atinge o seu pico máximo aos **Sábados**, alinhando-se perfeitamente com os hábitos de lazer e entretenimento de final de semana.
+---
 
-## 💡 Recomendação Estratégica Final
-Para maximizar o ROI dos clientes da agência, recomendamos o seguinte calendário de ativação:
-1. **Campanhas de Moda (Fashion):** Concentrar o maior volume de orçamento e postagens de alto impacto nas **Terças-feiras**.
-2. **Campanhas de Música e Entretenimento:** Reservar os principais lançamentos e ações de marketing para os **Sábados**.
+## ▶️ Como Executar
+
+1. Clone o repositório:
+```bash
+git clone https://github.com/pedrobittencourtdev/instagram-analytics.git
+```
+
+2. Instale as dependências:
+```bash
+pip install pandas numpy matplotlib seaborn
+```
+
+3. Abra o notebook:
+```bash
+jupyter notebook SocialMediaDataAnalysis.ipynb
+```
+
+> As dependências também são instaladas automaticamente ao executar 
+> a primeira célula do notebook.
+
+---
+
+## ⚠️ Limitações
+
+- Dataset sintético do Kaggle — pode não refletir dados reais do Instagram
+- Diferenças de engajamento entre categorias são pequenas (< 1%)
 
 
-## 🚀 Como Executar
-1. Clone este repositório:
-   ```bash
-   git clone https://github.com/pedrobittencourtdev/instagram-analytics.git
-2. Certifique-se de ter o Python e as bibliotecas necessárias instaladas:
-    ```bash
-    pip install pandas numpy matplotlib seaborn
+---
 
-3. Abra o arquivo .ipynb em um ambiente Jupyter ou VS Code.
+## 👨‍💻 Autor
+
+**Pedro Bittencourt**  
+Estudante de Engenharia de Software
+
+[![GitHub](https://img.shields.io/badge/GitHub-pedrobittencourtdev-black?logo=github)](https://github.com/pedrobittencourtdev)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Pedro%20Bittencourt-blue?logo=linkedin)](https://www.linkedin.com/in/pedro-lucas-bittencourt/)
